@@ -1,0 +1,1 @@
+select * from `dbt_databricks_proj_dev`.`source`.`dim_date`

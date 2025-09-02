@@ -1,0 +1,33 @@
+data_pipeline:
+  outputs:
+    dev:
+      account: vggqbdv-sz15770
+      database: dbt_db
+      password: Momanddad024@68
+      role: dbt_role
+      schema: dbt_schema
+      threads: 10
+      type: snowflake
+      user: srinivas0246
+      warehouse: dbt_warehouse
+  target: dev
+dbt_databricks_proj:
+  outputs:
+    dev:
+      catalog: dbt_databricks_proj_dev
+      host: dbc-4feca71d-1a9e.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/a0b5cb801f4427bd
+      schema: default
+      threads: 1
+      token: dapi8e490907b40e7ed64896381f74d5cef0
+      type: databricks
+    
+    prod:
+      catalog: dbt_databricks_proj_prod
+      host: dbc-4feca71d-1a9e.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/a0b5cb801f4427bd
+      schema: default
+      threads: 1
+      token: dapi8e490907b40e7ed64896381f74d5cef0
+      type: databricks
+  target: dev
