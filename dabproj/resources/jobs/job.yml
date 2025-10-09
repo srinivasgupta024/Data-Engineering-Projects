@@ -1,0 +1,14 @@
+resources:
+  jobs:
+    New_Job_Sep_16_2025_01_50_PM:
+      name: New Job Sep 16, 2025, 01:50 PM
+      tasks:
+        - task_key: ingestion
+          notebook_task:
+            notebook_path: ../../src/notebooks/Ingestion.ipynb
+            base_parameters:
+              catalog_name: ${var.catalog_name}
+            source: WORKSPACE
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED
